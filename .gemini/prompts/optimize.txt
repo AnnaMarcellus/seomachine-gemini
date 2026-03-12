@@ -1,0 +1,215 @@
+You are in OPTIMIZE mode. Perform comprehensive SEO audit and optimization.
+
+## Task
+Analyze the provided article and provide actionable recommendations to maximize search rankings while maintaining quality.
+
+## Input
+Article file path or content to analyze.
+
+## Analysis Framework
+
+### 1. Keyword Optimization Audit
+
+#### Primary Keyword
+- Identify target primary keyword
+- Calculate density (target: 1-2%)
+- Map all instances in:
+  - H1 heading
+  - First 100 words
+  - H2 headings (2-3 should include it)
+  - Body paragraphs (even distribution)
+  - Conclusion
+  - Meta elements
+
+#### Semantic Keywords
+- Identify LSI/semantic variations
+- Check natural language usage
+- Verify no keyword stuffing
+
+#### Opportunities
+- Headings where keywords could be added naturally
+- Paragraphs that could benefit from keyword integration
+- Alternative phrasing opportunities
+
+### 2. Content Structure Audit
+
+#### Heading Hierarchy
+- Single H1 with primary keyword
+- 4-7 H2 sections, logical progression
+- Proper H3 nesting
+- No skipped levels (H2→H4)
+
+#### Content Organization
+- Strong hook in introduction
+- Each section delivers on promise
+- Logical flow: Problem → Solution → Action
+- Balanced section lengths
+- Clear CTA in conclusion
+
+#### Scannability
+- Paragraph length: 2-4 sentences
+- Lists for sequential items
+- Bold/italics for emphasis
+- White space between sections
+
+### 3. Link Strategy Audit
+
+#### Internal Links (Target: 3-5+)
+- Count current internal links
+- Evaluate relevance and context
+- Check anchor text quality
+- Identify missed opportunities
+
+**Provide specific recommendations**:
+- "In [Section], link to [Page] with anchor text '[suggested]'"
+
+#### External Links (Target: 2-3+)
+- Count authoritative external links
+- Verify source credibility
+- Check for broken links
+- Identify claims needing citations
+
+### 4. Technical SEO Audit
+
+#### Meta Elements
+- **Title**: 50-60 chars, includes primary keyword, compelling
+- **Description**: 150-160 chars, clear value prop, CTA
+- **URL Slug**: Concise, keyword-rich, lowercase with hyphens
+
+Generate 3-5 improved alternatives for each.
+
+#### Image Optimization
+- Descriptive file names
+- Alt text with keywords
+- Strategic placement
+- Recommend where images would help
+
+#### Featured Snippet Opportunities
+- Question-answer format
+- List-based content
+- Table structures
+- Definition opportunities
+
+### 5. Readability & UX
+
+- Flesch Reading Ease score
+- Grade level assessment
+- Sentence length variety
+- Transition words usage
+
+## Python Tool Integration
+
+Run these tools on the content:
+
+```bash
+# Keyword analysis
+python3 -c "from data_sources.modules.keyword_analyzer import KeywordAnalyzer; ..."
+
+# SEO quality score
+python3 -c "from data_sources.modules.seo_quality_rater import SEOQualityRater; ..."
+
+# Readability scoring
+python3 -c "from data_sources.modules.readability_scorer import ReadabilityScorer; ..."
+
+# Content length comparison
+python3 -c "from data_sources.modules.content_length_comparator import ContentLengthComparator; ..."
+```
+
+## Output Format
+
+```markdown
+# SEO Optimization Report: [Article Title]
+
+## Executive Summary
+**Overall SEO Score**: [X]/100
+**Publishing Ready**: [Yes/No]
+[2-3 sentence overview]
+
+## Keyword Optimization
+
+### Primary Keyword: "[keyword]"
+- **Density**: [X]% (Target: 1-2%) — [optimal/too low/too high]
+- **Occurrences**: [X] times
+
+**Placement Check**:
+- [x] In H1 heading
+- [x] In first 100 words
+- [x] In 2+ H2 headings ([X]/[Y])
+- [x] In conclusion
+
+**Keyword Stuffing Risk**: [none/low/medium/high]
+
+### Recommendations
+1. [Specific action item]
+2. [Specific action item]
+
+## Content Structure
+
+### Heading Hierarchy: [Pass/Needs Work]
+- H1: [assessment]
+- H2s: [count] sections — [assessment]
+- H3s: [assessment]
+
+### Content Flow: [Pass/Needs Work]
+[Assessment and specific improvements]
+
+## Link Strategy
+
+### Internal Links: [X current] → Target: 3-5+
+**Recommendations**:
+1. In [section], link to [page] using "[anchor text]"
+2. ...
+
+### External Links: [X current] → Target: 2-3+
+**Recommendations**:
+1. [Specific suggestion]
+2. ...
+
+## Technical SEO
+
+### Meta Elements
+**Current Title**: [title] ([X] chars) — [assessment]
+**Better Options**:
+1. [option 1]
+2. [option 2]
+3. [option 3]
+
+**Current Description**: [desc] ([X] chars) — [assessment]
+**Better Options**:
+1. [option 1]
+2. [option 2]
+3. [option 3]
+
+### Featured Snippet Opportunities
+- [Opportunity 1 with formatting suggestion]
+- [Opportunity 2 with formatting suggestion]
+
+## Readability
+
+**Flesch Score**: [X] — [assessment]
+**Grade Level**: [X] — [assessment]
+
+**Improvements**:
+1. [Specific suggestion]
+2. [Specific suggestion]
+
+## Priority Action Items
+
+### Critical (Fix Before Publishing)
+1. [Action item]
+2. [Action item]
+
+### High Priority
+1. [Action item]
+2. [Action item]
+
+### Nice to Have
+1. [Action item]
+2. [Action item]
+
+## Final Recommendations
+
+[Summary of next steps and expected impact]
+```
+
+Save report to: `audits/[article-name]-audit-[date].md`

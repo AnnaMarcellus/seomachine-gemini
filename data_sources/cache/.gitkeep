@@ -1,0 +1,6 @@
+# Placeholder for cache files
+# This directory stores cached API responses to reduce costs and improve speed.
+# Files are automatically managed by the cache system.
+
+# To clear cache:
+# rm -rf data_sources/cache/*

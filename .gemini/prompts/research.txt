@@ -1,0 +1,123 @@
+You are in RESEARCH mode. Conduct comprehensive SEO keyword research and competitive analysis.
+
+## Task
+Research the topic provided and create a detailed research brief.
+
+## Process
+
+### 1. Keyword Research
+- Identify primary target keyword
+- Research search volume and difficulty
+- Find semantic variations and long-tail opportunities
+- Discover related questions (People Also Ask, forums, Reddit)
+- Determine search intent (informational, commercial, transactional)
+
+### 2. Competitive Analysis
+- Analyze top 10 SERP results
+- Note word counts of top performers
+- Identify common themes across competitors
+- Find content gaps and opportunities
+- Check for featured snippet opportunities
+
+### 3. Context Integration
+Read these files if they exist:
+- context/brand-voice.md for messaging fit
+- context/target-keywords.md for priority alignment
+- context/seo-guidelines.md for requirements
+- context/internal-links-map.md for related content
+
+## Output Format
+
+Create a research brief in this format:
+
+```markdown
+# Research Brief: [Topic]
+
+## SEO Foundation
+- **Primary Keyword**: [keyword] (volume: X, difficulty: Y)
+- **Secondary Keywords**: 
+  - [keyword 2]
+  - [keyword 3]
+  - [keyword 4]
+- **Search Intent**: [intent type]
+- **Target Word Count**: [X words based on SERP analysis]
+- **Featured Snippet Opportunity**: [Yes/No - format if yes]
+
+## Competitive Landscape
+
+### Top 3 Competitor Articles
+1. **[Title]** (URL)
+   - Word count: X
+   - Key strengths: ...
+   - Weaknesses: ...
+
+2. **[Title]** (URL)
+   - ...
+
+3. **[Title]** (URL)
+   - ...
+
+### Common Sections (Must-Cover)
+- [Section 1]
+- [Section 2]
+- [Section 3]
+
+### Content Gaps (Opportunities)
+- [Gap 1 - not covered by competitors]
+- [Gap 2 - weak coverage]
+
+## Recommended Outline
+
+```
+H1: [Optimized headline with primary keyword]
+
+Introduction
+- Hook: [specific hook type and angle]
+- Problem statement
+- Value proposition
+
+H2: [Section 1 title]
+H3: [Subsection]
+H3: [Subsection]
+
+H2: [Section 2 title]
+...
+
+Conclusion
+- Key takeaways
+- Call to action
+```
+
+## Supporting Elements
+
+### Statistics & Data to Include
+- [Stat 1 with source]
+- [Stat 2 with source]
+
+### Expert Sources to Reference
+- [Source 1]
+- [Source 2]
+
+### Internal Linking Opportunities
+- [Page 1] - anchor text suggestion
+- [Page 2] - anchor text suggestion
+
+### Visual Opportunities
+- [Image/chart type 1]
+- [Image/chart type 2]
+
+## Hook & Angle
+
+**Recommended Hook**: [Specific hook type - provocative question, scenario, statistic, bold statement, or counterintuitive claim]
+
+**Differentiation Strategy**: [How this content will stand out]
+```
+
+Save the completed research brief to: `research/[primary-keyword]-[date].md`
+
+## Important
+
+- Be specific with data and sources
+- Identify real content gaps, not generic ones
+- Consider how the topic fits into the user's broader content strategy
+- Suggest unique angles that competitors haven't covered

@@ -1,0 +1,141 @@
+{
+  "tools": [
+    {
+      "name": "analyze_keywords",
+      "description": "Analyze keyword density, distribution, and optimization in content",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string",
+            "description": "Article content to analyze"
+          },
+          "primary_keyword": {
+            "type": "string",
+            "description": "Main target keyword"
+          },
+          "secondary_keywords": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "List of secondary keywords"
+          },
+          "target_density": {
+            "type": "number",
+            "description": "Target keyword density percentage",
+            "default": 1.5
+          }
+        },
+        "required": ["content", "primary_keyword"]
+      }
+    },
+    {
+      "name": "rate_seo_quality",
+      "description": "Rate content against SEO best practices (0-100 score)",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string",
+            "description": "Article content"
+          },
+          "meta_title": {
+            "type": "string",
+            "description": "Meta title tag"
+          },
+          "meta_description": {
+            "type": "string",
+            "description": "Meta description tag"
+          },
+          "primary_keyword": {
+            "type": "string",
+            "description": "Target primary keyword"
+          },
+          "secondary_keywords": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Secondary keywords"
+          },
+          "internal_link_count": {
+            "type": "integer",
+            "description": "Number of internal links"
+          },
+          "external_link_count": {
+            "type": "integer",
+            "description": "Number of external links"
+          }
+        },
+        "required": ["content"]
+      }
+    },
+    {
+      "name": "score_readability",
+      "description": "Calculate readability scores and grade level",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string",
+            "description": "Content to analyze"
+          }
+        },
+        "required": ["content"]
+      }
+    },
+    {
+      "name": "compare_content_length",
+      "description": "Compare word count against top SERP competitors",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "description": "Target keyword for SERP analysis"
+          },
+          "your_word_count": {
+            "type": "integer",
+            "description": "Your content word count"
+          },
+          "fetch_content": {
+            "type": "boolean",
+            "description": "Whether to fetch full competitor content",
+            "default": false
+          }
+        },
+        "required": ["keyword", "your_word_count"]
+      }
+    },
+    {
+      "name": "analyze_search_intent",
+      "description": "Determine search intent for a keyword",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "description": "Keyword to analyze"
+          }
+        },
+        "required": ["keyword"]
+      }
+    },
+    {
+      "name": "fetch_serp_data",
+      "description": "Fetch SERP data for keyword analysis",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "description": "Keyword to search"
+          },
+          "location": {
+            "type": "string",
+            "description": "Location code (e.g., 'us', 'gb')",
+            "default": "us"
+          }
+        },
+        "required": ["keyword"]
+      }
+    }
+  ]
+}

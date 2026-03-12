@@ -1,0 +1,118 @@
+You are in WRITE mode. Create comprehensive, SEO-optimized long-form blog content.
+
+## Task
+Write a complete article on the given topic following SEO best practices.
+
+## Pre-Writing Checklist
+
+Before writing, check for:
+- **Research brief** in `research/` directory (from previous research command)
+- **Brand voice** guidelines in `context/brand-voice.md`
+- **Writing examples** in `context/writing-examples.md`
+- **Style guide** in `context/style-guide.md`
+- **SEO guidelines** in `context/seo-guidelines.md`
+- **Target keywords** in `context/target-keywords.md`
+
+## Article Requirements
+
+### Length & Structure
+- **2000-3000+ words** (based on SERP analysis)
+- **4-7 H2 sections** with logical progression
+- **H3 subsections** where needed for depth
+- **Short paragraphs**: 2-4 sentences max
+
+### SEO Requirements
+- **Primary keyword** in:
+  - H1 headline
+  - First 100 words
+  - 2-3 H2 headings
+  - Conclusion
+- **Keyword density**: 1-2% (natural, not forced)
+- **Internal links**: 3-5+ to relevant pages
+- **External links**: 2-3+ authoritative sources
+
+### The Hook (CRITICAL)
+
+**NEVER** start with:
+- "X is..." definitions
+- "When it comes to..."
+- "In today's world..."
+
+**ALWAYS** use one of these hook types:
+
+| Type | Example |
+|------|---------|
+| Provocative Question | "What if the 'free' plan is actually costing you $500/month in lost opportunities?" |
+| Specific Scenario | "Last Tuesday, Sarah checked her dashboard and discovered something alarming..." |
+| Surprising Statistic | "73% of SaaS users who switch platforms do so within 18 months..." |
+| Bold Statement | "Your current tool is lying to you about your numbers." |
+| Counterintuitive Claim | "The cheapest option might be the most expensive decision you make this year." |
+
+### Introduction Structure (APP Formula)
+1. **Agree** — Acknowledge reader's current belief/feeling
+2. **Promise** — Tell them exactly what they'll learn
+3. **Preview** — Brief overview of what's coming
+
+Include primary keyword in first 100 words.
+
+### Mini-Stories (2-3 per article)
+
+Every article MUST include 2-3 mini-scenarios:
+- **Specific person** (use names: "Sarah", "Mike", "The team at Acme Corp")
+- **Concrete situation** with details (dates, numbers, specifics)
+- **Clear outcome** illustrating the point
+- **50-150 words each**
+
+### Scannability
+- Use bullet and numbered lists
+- Bold key concepts
+- Include white space between sections
+- Add visual hierarchy with headings
+
+### Conclusion
+- Summarize key takeaways
+- Clear call-to-action
+- Reinforce value proposition
+
+## Meta Elements
+
+Include at the top of the article:
+
+```markdown
+---
+title: [50-60 chars, includes primary keyword]
+description: [150-160 chars, compelling CTA]
+keywords: [primary, secondary 1, secondary 2, secondary 3]
+slug: [keyword-optimized-url-slug]
+---
+```
+
+## Post-Writing: Auto-Trigger Analysis
+
+After writing, run these analyses:
+
+1. **Content Analysis**: Use data_sources/modules/keyword_analyzer.py
+2. **SEO Quality**: Use data_sources/modules/seo_quality_rater.py  
+3. **Readability**: Use data_sources/modules/readability_scorer.py
+4. **Internal Linking**: Identify 3-5 internal link opportunities
+
+## Output
+
+Save the completed article to: `drafts/[primary-keyword]-[date].md`
+
+Also provide:
+- **SEO score** (0-100)
+- **Word count**
+- **Top 3 improvement recommendations**
+
+## Quality Checklist Before Delivery
+
+- [ ] Hook grabs attention in first 2 sentences
+- [ ] Primary keyword in H1 and first 100 words
+- [ ] 2-3 mini-stories included
+- [ ] 3-5 internal links identified
+- [ ] 2-3 authoritative external sources cited
+- [ ] Short paragraphs (2-4 sentences)
+- [ ] Lists used for scannability
+- [ ] Clear CTA in conclusion
+- [ ] Meta elements optimized

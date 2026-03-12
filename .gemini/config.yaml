@@ -1,0 +1,38 @@
+# Gemini CLI Configuration
+
+# Model Settings
+model: gemini-2.0-flash
+
+# System Instructions
+instructions_file: .gemini/instructions.md
+
+# Context Files (auto-loaded)
+context_files:
+  - context/brand-voice.md
+  - context/style-guide.md
+  - context/seo-guidelines.md
+  - context/target-keywords.md
+  - context/internal-links-map.md
+
+# Tools
+tools_file: .gemini/tools.json
+
+# Python Environment
+python_path: python3
+
+# Workspace Directories
+workspace:
+  topics: workspace/topics
+  research: workspace/research
+  drafts: workspace/drafts
+  published: workspace/published
+  audits: workspace/audits
+
+# Default Behaviors
+auto_save: true
+confirm_destructive: true
+show_token_count: true
+
+# Tool Execution
+allow_tool_execution: true
+auto_run_tools: false  # Ask before running Python tools
