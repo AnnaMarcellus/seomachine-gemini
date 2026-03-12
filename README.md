@@ -1,12 +1,16 @@
-# SEO Machine
+# SEO Machine - Gemini CLI Edition
 
-A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.
+**Version:** 1.0.0-gemini  
+**Based on:** SEO Machine Original (Claude Code Edition) by TheCraigHewitt  
+**Optimized for:** Google Gemini CLI
+
+A specialized Gemini CLI workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.
 
 ## Overview
 
-SEO Machine is built on Claude Code and provides:
-- **Custom Commands**: `/research`, `/write`, `/rewrite`, `/analyze-existing`, `/optimize`, `/performance-review`, `/publish-draft`, `/article`, `/priorities`, plus specialized research and landing page commands
-- **Specialized Agents**: Content analyzer, SEO optimization, meta element creation, internal linking, keyword mapping, editor, performance analysis, headline generator, CRO analyst, landing page optimizer
+SEO Machine is built for Gemini CLI and provides:
+- **Custom Prompts**: `research:`, `write:`, `rewrite:`, `analyze:`, `optimize:`, `performance:`, `publish:`, plus specialized research and landing page prompts
+- **Specialized Personas**: Content analyzer, SEO optimization, meta element creation, internal linking, keyword mapping, editor, performance analysis, headline generator, CRO analyst, landing page optimizer (via system prompt)
 - **Marketing Skills**: 26 marketing skills for copywriting, CRO, A/B testing, email sequences, pricing strategy, and more
 - **Advanced SEO Analysis**: Search intent detection, keyword density & clustering, content length comparison, readability scoring, SEO quality rating (0-100)
 - **Data Integrations**: Google Analytics 4, Google Search Console, DataForSEO for real-time performance insights
@@ -16,15 +20,15 @@ SEO Machine is built on Claude Code and provides:
 ## Getting Started
 
 ### Prerequisites
-- [Claude Code](https://claude.com/claude-code) installed
-- Anthropic API account
+- [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) installed (`npm install -g @google/gemini-cli`)
+- Google AI Studio API key
 
 ### Installation
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/[your-username]/seomachine.git
-cd seomachine
+git clone https://github.com/AnnaMarcellus/seomachine-gemini.git
+cd seomachine-gemini
 ```
 
 2. Install Python dependencies for analysis modules:
@@ -39,9 +43,10 @@ This installs:
 - Machine learning (scikit-learn)
 - Web scraping tools (beautifulsoup4)
 
-3. Open in Claude Code:
+3. Configure Gemini CLI:
 ```bash
-claude-code .
+gemini config set project.name "seomachine"
+gemini config set project.instructions "$(cat .gemini/instructions.md)"
 ```
 
 4. **Customize Context Files** (Important!):
